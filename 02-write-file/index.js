@@ -5,7 +5,6 @@ const fs = require('fs');
 const output = fs.createWriteStream('02-write-file/text.txt','utf-8');
 stdin.on('data', data => {
     const newData = data.toString();
-    0.
     if(newData === "exit"){
         stdout.write("Bye\n");
         process.exit();
